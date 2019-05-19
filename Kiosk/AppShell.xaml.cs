@@ -62,20 +62,6 @@ namespace IntelligentKioskSample
                     Glyph = "\uECA5",
                     Label = "Demo Gallery",
                     DestPage = typeof(DemoLauncherPage)
-                },
-
-                new NavMenuItem()
-                {
-                    Glyph = "\uE8D4",
-                    Label = "Face Identification Setup",
-                    DestPage = typeof(FaceIdentificationSetup)
-                },
-
-                new NavMenuItem()
-                {
-                    Glyph = "\uE052",
-                    Label = "Custom Vision Setup",
-                    DestPage = typeof(CustomVisionSetup)
                 }
             });
 
@@ -170,7 +156,7 @@ namespace IntelligentKioskSample
             {
                 var control = (Page)e.Content;
 
-                if (!(control is DemoLauncherPage || control is FaceIdentificationSetup || control is SettingsPage || control is CustomVisionSetup))
+                if (!(control is DemoLauncherPage || control is SettingsPage))
                 {
                     navView.PaneDisplayMode = NavigationViewPaneDisplayMode.LeftMinimal;
                     navView.SelectedItem = null;

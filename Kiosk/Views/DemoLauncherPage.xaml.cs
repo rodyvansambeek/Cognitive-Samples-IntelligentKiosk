@@ -31,7 +31,9 @@
 // WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 // 
 
+using System.Linq;
 using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Navigation;
 
 namespace IntelligentKioskSample.Views
 {
@@ -45,11 +47,20 @@ namespace IntelligentKioskSample.Views
             this.InitializeComponent();
 
             this.DataContext = KioskExperiences.Experiences;
+
         }
 
         private void OnDemoClick(object sender, ItemClickEventArgs e)
         {
             this.Frame.Navigate(((KioskExperience)e.ClickedItem).PageType);
+        }
+
+        private void Page_Loaded(object sender, Windows.UI.Xaml.RoutedEventArgs e)
+        {
+            //var demo = KioskExperiences.Experiences.FirstOrDefault(i => i.PageType.FullName.Contains("RealTimeDemo")).PageType;
+
+            //this.Frame.Navigate(demo);
+
         }
     }
 }

@@ -103,12 +103,7 @@
     <Content Include="Assets\mixed_items.onnx" />
     <None Include="IntelligentKioskSample_TemporaryKey.pfx" />
     <None Include="packages.config" />
-    <Content Include="Views\CustomVision\BuiltInClassificationModels.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Views\CustomVision\BuiltInObjectDetectionModels.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    <Content Include="Assets\splash-sdk.scale-200.png" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -133,9 +128,6 @@
     </Compile>
     <Compile Include="Controls\SentimentControl.xaml.cs">
       <DependentUpon>SentimentControl.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\SentimentDistributionControl.xaml.cs">
-      <DependentUpon>SentimentDistributionControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="Controls\SpeechToTextControl.xaml.cs">
       <DependentUpon>SpeechToTextControl.xaml</DependentUpon>
@@ -185,73 +177,11 @@
     <Compile Include="NavMenuItem.cs" />
     <Compile Include="SettingsHelper.cs" />
     <Compile Include="Util.cs" />
-    <Compile Include="Views\BingNewsAnalytics.xaml.cs">
-      <DependentUpon>BingNewsAnalytics.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\BingVisualSearch.xaml.cs">
-      <DependentUpon>BingVisualSearch.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\CustomVision\CustomObjectDetectionModel.cs" />
-    <Compile Include="Views\CustomVision\CustomVisionDataLoader.cs" />
-    <Compile Include="Views\CustomVision\CustomVisionExplorer.xaml.cs">
-      <DependentUpon>CustomVisionExplorer.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\CustomVision\CustomVisionModel.cs" />
-    <Compile Include="Views\CustomVision\CustomVisionServiceHelper.cs" />
-    <Compile Include="Views\CustomVision\CustomVisionSetup.xaml.cs">
-      <DependentUpon>CustomVisionSetup.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\CustomVision\ImageWithRegionEditorsControl.xaml.cs">
-      <DependentUpon>ImageWithRegionEditorsControl.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\CustomVision\RegionEditorControl.xaml.cs">
-      <DependentUpon>RegionEditorControl.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\CustomVision\ThumbnailWithRegionsControl.xaml.cs">
-      <DependentUpon>ThumbnailWithRegionsControl.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Views\DemoLauncherPage.xaml.cs">
       <DependentUpon>DemoLauncherPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\FaceIdentificationSetup.xaml.cs">
-      <DependentUpon>FaceIdentificationSetup.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\GreetingKiosk.xaml.cs">
-      <DependentUpon>GreetingKiosk.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\ImageCollectionInsights\EmotionFilterViewModel.cs" />
-    <Compile Include="Views\ImageCollectionInsights\FaceFilterViewModel.cs" />
-    <Compile Include="Views\ImageCollectionInsights\FaceInsights.cs" />
-    <Compile Include="Views\ImageCollectionInsights\ImageCollectionInsights.xaml.cs" />
-    <Compile Include="Views\ImageCollectionInsights\ImageInsights.cs" />
-    <Compile Include="Views\ImageCollectionInsights\ImageInsightsViewModel.cs" />
-    <Compile Include="Views\ImageCollectionInsights\ImageProcessor.cs" />
-    <Compile Include="Views\ImageCollectionInsights\TagFilterViewModel.cs" />
-    <Compile Include="Views\ImageCollectionInsights\VisionInsights.cs" />
-    <Compile Include="Views\MallKioskPage.xaml.cs">
-      <DependentUpon>MallKioskPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\MallKioskDemoConfig\MallKioskDemoSettings.cs" />
     <Compile Include="Views\RealTimeDemo.xaml.cs">
       <DependentUpon>RealTimeDemo.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\AutomaticPhotoCapturePage.xaml.cs">
-      <DependentUpon>AutomaticPhotoCapturePage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\EmotionRecognitionPage.xaml.cs">
-      <DependentUpon>EmotionRecognitionPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\RealtimeDriverMonitoring.xaml.cs">
-      <DependentUpon>RealtimeDriverMonitoring.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\RealtimeImageClassification.xaml.cs">
-      <DependentUpon>RealtimeImageClassification.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\RealtimeObjectDetection.xaml.cs">
-      <DependentUpon>RealtimeObjectDetection.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\RecognitionPage.xaml.cs">
-      <DependentUpon>RecognitionPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\SettingsPage.xaml.cs">
       <DependentUpon>SettingsPage.xaml</DependentUpon>
@@ -262,19 +192,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controls\ImageSearchUserControl.xaml.cs">
       <DependentUpon>ImageSearchUserControl.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\TranslatorExplorer\AlternativeTranslationsControl.xaml.cs">
-      <DependentUpon>AlternativeTranslationsControl.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\TranslatorExplorer\TranslatorExplorerPage.xaml.cs">
-      <DependentUpon>TranslatorExplorerPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\VideoInsights\TagFilterControl.xaml.cs" />
-    <Compile Include="Views\VideoInsights\VideoInsightsPage.xaml.cs">
-      <DependentUpon>VideoInsightsPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\VisionApiExplorer.xaml.cs">
-      <DependentUpon>VisionApiExplorer.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -301,7 +218,6 @@
     <Content Include="Assets\RealTimeFromVideo.PNG" />
     <Content Include="Assets\RealtimeImageClassification.png" />
     <Content Include="Assets\smalltile-sdk.png" />
-    <Content Include="Assets\splash-sdk.png" />
     <Content Include="Assets\StoreLogo.png" />
     <Content Include="Assets\squaretile-sdk.png" />
     <Content Include="Assets\squaretile-sdk-44.png" />
@@ -311,7 +227,6 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="Assets\StoreLogo.scale-10.png" />
-    <Content Include="Views\MallKioskDemoConfig\MallKioskDemoSettings.xml" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -343,10 +258,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Controls\SentimentControl.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Controls\SentimentDistributionControl.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -407,79 +318,11 @@
       <Generator>MSBuild:Compile</Generator>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Page>
-    <Page Include="Views\BingNewsAnalytics.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Views\BingVisualSearch.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Views\CustomVision\CustomVisionExplorer.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Views\CustomVision\CustomVisionSetup.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Views\CustomVision\ImageWithRegionEditorsControl.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\CustomVision\RegionEditorControl.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\CustomVision\ThumbnailWithRegionsControl.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Views\DemoLauncherPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Views\FaceIdentificationSetup.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Views\GreetingKiosk.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Views\ImageCollectionInsights\ImageCollectionInsights.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Views\MallKioskPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="Views\RealTimeDemo.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Views\AutomaticPhotoCapturePage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Views\EmotionRecognitionPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Views\RealtimeDriverMonitoring.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Views\RealtimeImageClassification.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\RealtimeObjectDetection.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\RecognitionPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -494,26 +337,6 @@
     <Page Include="Controls\ImageSearchUserControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\TranslatorExplorer\AlternativeTranslationsControl.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\TranslatorExplorer\TranslatorExplorerPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\VideoInsights\TagFilterControl.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Views\VideoInsights\VideoInsightsPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Views\VisionApiExplorer.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <ItemGroup>

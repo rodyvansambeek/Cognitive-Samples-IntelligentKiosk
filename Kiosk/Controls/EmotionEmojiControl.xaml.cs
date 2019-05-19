@@ -55,35 +55,35 @@ namespace IntelligentKioskSample.Controls
             switch (topEmotion.Key)
             {
                 case "Anger":
-                    label = "Angry";
+                    label = "Kwaad";
                     emoji = "\U0001f620";
                     break;
                 case "Contempt":
-                    label = "Contemptuous";
+                    label = "Minachtend";
                     emoji = "\U0001f612";
                     break;
                 case "Disgust":
-                    label = "Disgusted";
+                    label = "Afkerig";
                     emoji = "\U0001f627";
                     break;
                 case "Fear":
-                    label = "Afraid";
+                    label = "Bang";
                     emoji = "\U0001f628";
                     break;
                 case "Happiness":
-                    label = "Happy";
+                    label = "Vrolijk";
                     emoji = "\U0001f60a";
                     break;
                 case "Neutral":
-                    label = "Neutral";
+                    label = "Neutraal";
                     emoji = "\U0001f614";
                     break;
                 case "Sadness":
-                    label = "Sad";
+                    label = "Verdrietig";
                     emoji = "\U0001f622";
                     break;
                 case "Surprise":
-                    label = "Surprised";
+                    label = "Verbaasd";
                     emoji = "\U0001f632";
                     break;
                 default:
