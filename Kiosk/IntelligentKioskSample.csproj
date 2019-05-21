@@ -22,11 +22,15 @@
     <SccProvider>SAK</SccProvider>
     <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
     <AppxBundle>Always</AppxBundle>
-    <AppxBundlePlatforms>x86|x64|arm</AppxBundlePlatforms>
-    <PackageCertificateThumbprint>AFA97E8E34493A24325844C55BC66D56D9F3595C</PackageCertificateThumbprint>
+    <AppxBundlePlatforms>x86|x64</AppxBundlePlatforms>
+    <PackageCertificateThumbprint>8516C67F8372B2213EECC33BBA8A6D91A66C8638</PackageCertificateThumbprint>
     <PackageCertificateKeyFile>IntelligentKioskSample_TemporaryKey.pfx</PackageCertificateKeyFile>
     <ApplicationInsightsResourceId />
     <RuntimeIdentifiers>win10-arm;win10-arm-aot;win10-x86;win10-x86-aot;win10-x64;win10-x64-aot</RuntimeIdentifiers>
+    <GenerateAppInstallerFile>False</GenerateAppInstallerFile>
+    <AppInstallerUpdateFrequency>1</AppInstallerUpdateFrequency>
+    <AppInstallerCheckForUpdateFrequency>OnApplicationRun</AppInstallerCheckForUpdateFrequency>
+    <AppxSymbolPackageEnabled>False</AppxSymbolPackageEnabled>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
     <DebugSymbols>true</DebugSymbols>
@@ -101,6 +105,7 @@
     <Content Include="Assets\RealtimeObjectDetection.png" />
     <Content Include="Assets\simple_fruits.onnx" />
     <Content Include="Assets\mixed_items.onnx" />
+    <Content Include="Views\MallKioskDemoConfig\MallKioskDemoSettings.xml" />
     <None Include="IntelligentKioskSample_TemporaryKey.pfx" />
     <None Include="packages.config" />
     <Content Include="Assets\splash-sdk.scale-200.png" />
@@ -180,6 +185,7 @@
     <Compile Include="Views\DemoLauncherPage.xaml.cs">
       <DependentUpon>DemoLauncherPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\MallKioskDemoConfig\MallKioskDemoSettings.cs" />
     <Compile Include="Views\RealTimeDemo.xaml.cs">
       <DependentUpon>RealTimeDemo.xaml</DependentUpon>
     </Compile>
