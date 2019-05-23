@@ -62,6 +62,12 @@ namespace IntelligentKioskSample
                     Glyph = "\uECA5",
                     Label = "Demo Gallery",
                     DestPage = typeof(DemoLauncherPage)
+                },
+                new NavMenuItem()
+                {
+                    Glyph = "\uE8D4",
+                    Label = "Face Identification Setup",
+                    DestPage = typeof(FaceIdentificationSetup)
                 }
             });
 

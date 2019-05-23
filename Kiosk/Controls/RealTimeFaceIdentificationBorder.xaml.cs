@@ -71,6 +71,14 @@ namespace IntelligentKioskSample.Controls
             }
             else if (!string.IsNullOrEmpty(gender))
             {
+                if (gender == "Male")
+                {
+                    gender = "Man";
+                }
+                else if (gender == "Female")
+                {
+                    gender = "Vrouw";
+                }
                 this.captionTextHeader.Text = string.Format("{0}, {1}", roundedAge.ToString(), gender);
             }
 

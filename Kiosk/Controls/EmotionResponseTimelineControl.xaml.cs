@@ -60,7 +60,7 @@ namespace IntelligentKioskSample.Controls
                 HorizontalAlignment = HorizontalAlignment.Left,
             };
 
-            stackBar.Margin = new Thickness(leftMargin += (stackBar.Width * 1.5), 0, 0, 0);
+            stackBar.Margin = new Thickness(leftMargin += (stackBar.Width * 0.5), 0, 0, 0);
             stackBar.DrawEmotionData(emotion);
 
             graph.Children.Add(stackBar);

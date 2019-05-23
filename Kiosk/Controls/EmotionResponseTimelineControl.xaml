@@ -19,7 +19,6 @@
         </Grid.RowDefinitions>
 
         <TextBlock Margin="6,6,6,0" Text="Gemiddelde Emotie" Foreground="Gray" Style="{StaticResource BaseTextBlockStyle}"/>
-        <TextBlock Margin="6,0,6,0" Text="In de laatste paar minuten" Foreground="Gray" Style="{StaticResource CaptionTextBlockStyle}" Opacity="0.5" Grid.Row="1"/>
 
         <Rectangle Height="1" Margin="0,6,0,0" Fill="Gray" Grid.Row="2"/>
 

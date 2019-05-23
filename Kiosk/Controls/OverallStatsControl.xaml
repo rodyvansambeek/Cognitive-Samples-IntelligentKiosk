@@ -18,7 +18,6 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <TextBlock Margin="6,6,6,0" Text="{Binding HeaderText, ElementName=userControl}" Foreground="Gray" Style="{StaticResource BaseTextBlockStyle}"/>
-        <TextBlock Text="{Binding SubHeaderText, ElementName=userControl}" Visibility="{Binding SubHeaderVisibility, ElementName=userControl}" Grid.Row="1" Margin="6,0,6,0" Foreground="Gray" Opacity="0.5" Style="{StaticResource CaptionTextBlockStyle}"/>
         <Rectangle Height="1" Fill="Gray" Grid.Row="2" Margin="0,6,0,0"/>
 
         <Grid Grid.Row="3">
