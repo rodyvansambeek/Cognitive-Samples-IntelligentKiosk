@@ -280,7 +280,7 @@ namespace IntelligentKioskSample.Views
                     {
                         demographicsChanged = true;
 
-                        visitor = new Visitor { UniqueId = persistedFaceId, Count = 1 };
+                        visitor = new Visitor { UniqueId = persistedFaceId, Count = 1, HasGlasses = item.Face.FaceAttributes.Glasses != GlassesType.NoGlasses, HasMakeup = item.Face.FaceAttributes.Makeup.EyeMakeup || item.Face.FaceAttributes.Makeup.LipMakeup };
                         this.visitors.Add(visitor.UniqueId, visitor);
                         this.demographics.Visitors.Add(visitor);
 
@@ -445,6 +445,11 @@ namespace IntelligentKioskSample.Views
 
         [XmlAttribute]
         public int Count { get; set; }
+
+        [XmlAttribute]
+        public bool HasGlasses { get; set; }
+        [XmlAttribute]
+        public bool HasMakeup { get; set; }
     }
 
     [XmlType]

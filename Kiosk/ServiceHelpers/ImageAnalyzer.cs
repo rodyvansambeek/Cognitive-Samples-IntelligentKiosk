@@ -48,7 +48,9 @@ namespace ServiceHelpers
             FaceAttributeType.Age,
             FaceAttributeType.Gender,
             FaceAttributeType.HeadPose,
-            FaceAttributeType.Emotion
+            FaceAttributeType.Emotion,
+            FaceAttributeType.Glasses,
+            FaceAttributeType.Makeup
         };
         private static readonly List<VisualFeatureTypes> DefaultVisualFeatures = new List<VisualFeatureTypes>()
         {

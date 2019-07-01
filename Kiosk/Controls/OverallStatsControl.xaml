@@ -8,7 +8,7 @@
     mc:Ignorable="d"
     d:DesignHeight="300"
     d:DesignWidth="400"
-    x:Name="userControl">
+    x:Name="userControl" Tapped="Grid_Tapped">
 
     <Grid Background="#FF222222">
         <Grid.RowDefinitions>
@@ -22,18 +22,29 @@
 
         <Grid Grid.Row="3">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
+                <ColumnDefinition x:Name="col1" />
+                <ColumnDefinition x:Name="col2" />
+                <ColumnDefinition Width="0" x:Name="colGlasses" />
             </Grid.ColumnDefinitions>
 
-            <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center" >
+            <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center" Name="spAnalysed">
                 <TextBlock Text="Geanalyseerd" Foreground="Gray" Style="{StaticResource CaptionTextBlockStyle}" VerticalAlignment="Center" HorizontalAlignment="Center" ></TextBlock>
                 <TextBlock Grid.Row="2" x:Name="facesProcessedTextBlock" Foreground="Gray" VerticalAlignment="Center" HorizontalAlignment="Center"  Style="{StaticResource SubtitleTextBlockStyle}"/>
             </StackPanel>
 
-            <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="1">
+            <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="1" Name="spUnique">
                 <TextBlock Text="Uniek" Foreground="Gray" Style="{StaticResource CaptionTextBlockStyle}"  VerticalAlignment="Center" HorizontalAlignment="Center" ></TextBlock>
                 <TextBlock Grid.Row="2" x:Name="uniqueFacesCountTextBlock" Foreground="Gray" VerticalAlignment="Center" HorizontalAlignment="Center"  Style="{StaticResource SubtitleTextBlockStyle}"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="2" Name="spGlasses">
+                <TextBlock Text="Brildragers" Foreground="Gray" Style="{StaticResource CaptionTextBlockStyle}"  VerticalAlignment="Center" HorizontalAlignment="Center" ></TextBlock>
+                <TextBlock Grid.Row="2" x:Name="uniqueGlassesCountTextBlock" Foreground="Gray" VerticalAlignment="Center" HorizontalAlignment="Center"  Style="{StaticResource SubtitleTextBlockStyle}"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="3" Name="spMakeup">
+                <TextBlock Text="Draagt makeup" Foreground="Gray" Style="{StaticResource CaptionTextBlockStyle}"  VerticalAlignment="Center" HorizontalAlignment="Center" ></TextBlock>
+                <TextBlock Grid.Row="2" x:Name="uniqueMakeupCountTextBlock" Foreground="Gray" VerticalAlignment="Center" HorizontalAlignment="Center"  Style="{StaticResource SubtitleTextBlockStyle}"/>
             </StackPanel>
 
         </Grid>

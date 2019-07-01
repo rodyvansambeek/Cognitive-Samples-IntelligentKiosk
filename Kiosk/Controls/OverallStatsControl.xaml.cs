@@ -93,6 +93,26 @@ namespace IntelligentKioskSample.Controls
         {
             this.facesProcessedTextBlock.Text = data.Visitors.Sum(v => v.Count).ToString();
             this.uniqueFacesCountTextBlock.Text = data.Visitors.Count.ToString();
+            this.uniqueGlassesCountTextBlock.Text = data.Visitors.Count(v => v.HasGlasses).ToString();
+            this.uniqueMakeupCountTextBlock.Text = data.Visitors.Count(v => v.HasMakeup).ToString();
+        }
+
+        private void Grid_Tapped(object sender, Windows.UI.Xaml.Input.TappedRoutedEventArgs e)
+        {
+            if (Grid.GetColumn(spGlasses) == 0)
+            {
+                Grid.SetColumn(spMakeup, 2);
+                Grid.SetColumn(spGlasses, 2);
+                Grid.SetColumn(spUnique, 0);
+                Grid.SetColumn(spAnalysed, 1);
+            }
+            else
+            {
+                Grid.SetColumn(spGlasses, 0);
+                Grid.SetColumn(spMakeup, 1);
+                Grid.SetColumn(spUnique, 2);
+                Grid.SetColumn(spAnalysed, 2);
+            }
         }
     }
 }

@@ -23,8 +23,9 @@
     <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
     <AppxBundle>Always</AppxBundle>
     <AppxBundlePlatforms>x86|x64</AppxBundlePlatforms>
-    <PackageCertificateThumbprint>8516C67F8372B2213EECC33BBA8A6D91A66C8638</PackageCertificateThumbprint>
-    <PackageCertificateKeyFile>IntelligentKioskSample_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <PackageCertificateThumbprint>56D32E57A6E62A8CB0A1AA02EFC9AFB7F84885B9</PackageCertificateThumbprint>
+    <PackageCertificateKeyFile>
+    </PackageCertificateKeyFile>
     <ApplicationInsightsResourceId />
     <RuntimeIdentifiers>win10-arm;win10-arm-aot;win10-x86;win10-x86-aot;win10-x64;win10-x64-aot</RuntimeIdentifiers>
     <GenerateAppInstallerFile>True</GenerateAppInstallerFile>
